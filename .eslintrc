@@ -1,0 +1,12 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "globals": {
+    "document": true,
+    "console": true,
+    "window": true,
+    "require": true,
+    "global": true,
+    "module": true
+  }
+}

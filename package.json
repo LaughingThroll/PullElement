@@ -1,0 +1,50 @@
+{
+  "name": "start__gulp",
+  "version": "1.0.0",
+  "description": "main assembly",
+  "reposetory": "STANDARD-GULP",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "retina": "gulp images",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Kostya Konovalenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-transform-regenerator": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.10.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.12",
+    "cross-env": "^7.0.2",
+    "del": "^5.1.0",
+    "eslint": "^4.19.1",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "terser-webpack-plugin": "^3.0.6",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "homepage": "https://laughingthroll.github.io/MY_APP"
+}
